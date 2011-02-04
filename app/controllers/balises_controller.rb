@@ -3,10 +3,6 @@ class BalisesController < ApplicationController
   def activate
     @balise=Balise.new
     @balise.save!
-    respond_to do |format|
-      format.html
-      format.xml { render @balise}
-    end
   end
   
   def index

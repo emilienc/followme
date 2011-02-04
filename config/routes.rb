@@ -1,11 +1,12 @@
 Followme::Application.routes.draw do
+  match 'balises/activate' => 'balises#activate'
   resources :balises
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
+    
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
@@ -50,7 +51,7 @@ Followme::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+   root :to => "balises#index"
 
   # See how all your routes lay out with "rake routes"
 
