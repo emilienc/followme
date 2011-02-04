@@ -1,0 +1,12 @@
+<% title "Balise" %>
+
+<p>
+  <strong>Code:</strong>
+  <%= @balise.code %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_balise_path(@balise) %> |
+  <%= link_to "Destroy", @balise, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", balises_path %>
+</p>

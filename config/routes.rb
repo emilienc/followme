@@ -1,4 +1,6 @@
 Followme::Application.routes.draw do
+  resources :balises
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
