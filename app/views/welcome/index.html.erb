@@ -1,2 +1,7 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<h1>Bienvenue sur Suismoi le site qui vous permet de suivre vos amis quand ceux-ci le désirent</h1>
+
+<%= form_tag(url_for(:controller=>"lieus",:action=>"check"), :method => "get") do %>
+  <%= label_tag(:q, "Code:") %>
+  <%= text_field_tag(:code) %>
+  <%= submit_tag("Entrer") %>
+<% end %>
