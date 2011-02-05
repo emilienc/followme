@@ -1,7 +1,13 @@
 Followme::Application.routes.draw do
-  match 'balises/activate' => 'balises#activate'
-  resources :balises
+  
 
+  #get "welcome/index"
+
+  match 'lieus/check' => 'lieus#check'
+  match 'balises/activate' => 'balises#activate'
+  match 'balises/signal' => 'balises#signal'
+  resources :balises
+  resources :lieus
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -51,7 +57,7 @@ Followme::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => "balises#index"
+   root :to => "welcome#index"
 
   # See how all your routes lay out with "rake routes"
 

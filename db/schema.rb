@@ -10,10 +10,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110204065124) do
+ActiveRecord::Schema.define(:version => 20110204172107) do
 
   create_table "balises", :force => true do |t|
     t.string   "code"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "lieus", :force => true do |t|
+    t.float    "lat"
+    t.float    "lng"
+    t.integer  "balise_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
