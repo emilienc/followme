@@ -9,7 +9,7 @@ module ApplicationHelper
        markers.each_with_index do |m,index|
          ret += 'var contentString ="'
          #ret += image_html(m.photo.url(:thumb))
-         ret +="<b>test</b>"
+         ret +="<b>#{m.created_at}</b>"
          ret += '";'
          ret+= "var infiwindow#{index.to_s} = new google.maps.InfoWindow({content:contentString});
                    var marker#{index.to_s}= new google.maps.Marker({
