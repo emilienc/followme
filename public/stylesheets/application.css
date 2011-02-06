@@ -84,3 +84,200 @@ a {
 	height:450px;
 	width:80%;
 }
+
+.logbox {
+
+
+
+	margin-left:auto;
+
+
+
+	margin-right:auto;
+
+
+
+	padding: 10px 10px;
+
+
+
+	width:400px;
+
+
+
+	border-radius: 10px;
+
+
+
+	-webkit-border-radius: 10px;
+
+
+
+	-moz-border-radius: 10px;
+
+
+
+	border:1px solid #CCC;
+
+
+
+	background: #fff;
+
+
+
+	box-shadow: 0 0 3px #555;
+
+	
+
+	-webkit-box-shadow: 0 0 3px #555;
+
+	
+
+	-moz-box-shadow: 0 0 3px #555;
+
+
+
+}
+
+
+
+.logbox h1 {
+
+
+
+	font-size:15px !important;
+
+
+
+	height:15px;
+
+
+
+	overflow:hidden;
+
+
+
+}
+
+
+
+.logbox form#pass { /*display:none;*/ }
+
+
+
+form#pass input {
+
+
+
+	padding:10px 20px;
+
+
+
+	margin-top:10px;
+
+
+
+	width:50%;
+
+
+
+	background:#f6fedc;
+
+
+
+	border:1px solid #CCC;
+
+
+
+	border-radius: 10px;
+
+
+
+	-webkit-border-radius: 10px;
+
+
+
+	-moz-border-radius: 10px;
+
+	
+
+	width:200px;
+
+
+
+}
+
+
+
+form#pass input[type=submit] {
+
+
+
+	padding:10px 20px;
+
+
+
+	background:url(../im/settings/submit_bg.png) left center no-repeat;
+
+
+
+	width:240px;
+
+
+
+	border:1px solid #CCC;
+
+
+
+	border-radius: 10px;
+
+
+
+	-webkit-border-radius: 10px;
+
+
+
+	-moz-border-radius: 10px;
+
+
+
+}
+
+
+
+form#pass input[type=submit]:hover {
+
+	
+
+	background:url(../im/settings/submit_bg_on.png) left center no-repeat;
+
+	
+
+}
+
+
+
+form#pass br { clear:both; }
+#log_container {
+
+
+
+	position:absolute;
+
+
+
+	left:0;
+
+
+
+	right:0;
+
+
+
+	top:115px;
+
+
+
+}
+
+

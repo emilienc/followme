@@ -1,7 +1,17 @@
-<h1>Bienvenue sur Suismoi le site qui vous permet de suivre vos amis quand ceux-ci le désirent</h1>
 
-<%= form_tag(url_for(:controller=>"lieus",:action=>"check"), :method => "get") do %>
-  <%= label_tag(:q, "Code:") %>
+
+<div id="full" class="" >
+<div id="log_container" class="" >
+
+
+<div class="logbox">
+  <h2>Entrer le Code de la personne à suivre</h2>
+
+<%= form_tag(url_for(:controller=>"lieus",:action=>"check"), :method => "get", :id=>"pass", :class=>"form-password") do %>
   <%= text_field_tag(:code) %>
   <%= submit_tag("Entrer") %>
 <% end %>
+</div>
+
+</div>
+</div>
