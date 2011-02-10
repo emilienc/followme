@@ -1,25 +1,5 @@
 class BalisesController < ApplicationController
   
-  def signal
-    @balise = Balise.find_by_code(params[:code])
-    @lieu = Lieu.new
-    @lieu.balise_id = @balise.id
-    @lieu.lng =  params[:lng]
-    @lieu.lat =  params[:lat]
-    @lieu.save!
-    respond_to do |format|
-      format.xml { render :xml => @lieu}
-    end
-  end
-  
-  
-  def activate
-    @balise=Balise.new
-    @balise.save!
-    respond_to do |format|
-      format.xml { render :xml => @balise }
-    end
-  end
   
   def index
     @balises = Balise.all

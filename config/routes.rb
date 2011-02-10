@@ -1,11 +1,16 @@
 Followme::Application.routes.draw do
   
 
+  get "mobile/activate"
+
+  get "mobile/signal"
+
+  get "mobile/check"
+
   #get "welcome/index"
 
   match 'lieus/check' => 'lieus#check'
-  match 'balises/activate' => 'balises#activate'
-  match 'balises/signal' => 'balises#signal'
+  
   resources :balises
   resources :lieus
   # The priority is based upon order of creation:

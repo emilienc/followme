@@ -1,5 +1,6 @@
 class LieusController < ApplicationController
 
+  #depuis le web
   def check
     @code = params[:code]
     @lieus = Balise.find_by_code(@code).lieus
