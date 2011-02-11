@@ -3,6 +3,12 @@
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
  
 <script type="text/javascript">
-      <%=raw initialize_map(@lieus) unless @lieus.nil? or @lieus.empty?%>              
-    </script>
+ function initialize(){
+	  var map = new CMap();
+      map.create('map',<%=@lieus[0].lat%>,<%=@lieus[0].lng%>);   
+      <% @lieus.each do |lieu| %> 
+	  	map.addWindow(map.addMarker(<%=lieu.lat%>,<%=lieu.lng%>),"<%=lieu.created_at%>");
+	  <%end%>  
+	}      
+</script>
 <%end%>

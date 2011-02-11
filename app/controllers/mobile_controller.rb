@@ -30,7 +30,6 @@ class MobileController < ApplicationController
     end
   end
 
-  def check
-  end
+  
 
 end

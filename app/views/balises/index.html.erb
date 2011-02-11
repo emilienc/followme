@@ -6,7 +6,7 @@
   </tr>
   <% for balise in @balises %>
     <tr>
-      <td><%= balise.code %></td>
+      <td><%= balise.code %>(<%=balise.lieus.length%>)</td>
       <td><%= link_to "Show", balise %></td>
       <td><%= link_to "Edit", edit_balise_path(balise) %></td>
       <td><%= link_to "Destroy", balise, :confirm => 'Are you sure?', :method => :delete %></td>
