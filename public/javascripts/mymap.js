@@ -2,6 +2,7 @@ function CMap() {
 	
 	this.map = null;
 	
+	
 	this.addWindow = function(marker,content){
 		var contentString = content;
         var infiwindow = new google.maps.InfoWindow({content:contentString});

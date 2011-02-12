@@ -1,5 +1,10 @@
 class MobileController < ApplicationController
   
+  def mail
+    
+  end
+  
+  
   def check
     @code = params[:code]
     @lieus = Balise.find_by_code(@code).lieus

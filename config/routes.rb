@@ -1,5 +1,6 @@
 Followme::Application.routes.draw do
   
+  get "mobile/mail"
 
   get "mobile/activate"
 
