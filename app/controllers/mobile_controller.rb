@@ -1,7 +1,7 @@
 class MobileController < ApplicationController
   
   def mail
-    
+    @code = params[:code]
   end
   
   
