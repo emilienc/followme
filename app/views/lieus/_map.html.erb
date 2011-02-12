@@ -10,6 +10,7 @@
       <% @lieus.each do |lieu| %> 
 	  	map.addWindow(map.addMarker(<%=lieu.lat%>,<%=lieu.lng%>),"<%=lieu.created_at%>");
 	  <%end%>  
+	  map.detectBrowser('map');
 	
 	}      
 </script>

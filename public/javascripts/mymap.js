@@ -2,6 +2,18 @@ function CMap() {
 	
 	this.map = null;
 	
+	this.detectBrowser = function(div) { 
+	  var useragent = navigator.userAgent; 
+	  var mapdiv = document.getElementById(div); 
+	  if (useragent.indexOf('iPhone') != -1 || 	useragent.indexOf('Android') != -1 ) { 
+	    mapdiv.style.width = '100%'; 
+	    mapdiv.style.height = '100%'; 
+	  } else { 
+	    mapdiv.style.width = '100px'; 
+	    mapdiv.style.height = '200px'; 
+	  } 
+	} 
+	
 	
 	this.addWindow = function(marker,content){
 		var contentString = content;
