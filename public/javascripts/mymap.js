@@ -9,8 +9,8 @@ function CMap() {
 	    mapdiv.style.width = '100%'; 
 	    mapdiv.style.height = '100%'; 
 	  } else { 
-	    mapdiv.style.width = '100px'; 
-	    mapdiv.style.height = '200px'; 
+	    mapdiv.style.width = '600px'; 
+	    mapdiv.style.height = '800px'; 
 	  } 
 	} 
 	
