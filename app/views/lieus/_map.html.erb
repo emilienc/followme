@@ -8,7 +8,8 @@
 	  var map = new CMap();
       map.create('map',<%=@lieus[0].lat%>,<%=@lieus[0].lng%>);   
       <% @lieus.each do |lieu| %> 
-	  	map.addWindow(map.addMarker(<%=lieu.lat%>,<%=lieu.lng%>),"<%=lieu.created_at%>");
+        var m = map.addMarker(<%=lieu.lat%>,<%=lieu.lng%>);
+	  	map.addWindow(m,"<%=lieu.created_at%>");
 	  <%end%>  
 	  map.detectBrowser('map');
 	
